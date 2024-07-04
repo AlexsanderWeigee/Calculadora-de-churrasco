@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de churrasco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1 class="title">Calculadora de churrasco</h1>
+        <p class="textoDeEntrada">Informe a quantidade de pessoas para calcular:</p>
+
+        <div class="campos">
+            <div class="inputGrupo">
+                <label class="label" for="homens">Homens:</label>
+                <input type="number" id="homens" min="0" value="">
+            </div>
+            <div class="inputGrupo">
+                <label class="label" for="mulheres">Mulheres:</label>
+                <input type="number" id="mulheres" min="0" value="">
+            </div>
+            <div class="inputGrupo">
+                <label class="label" for="criancas">Crianças:</label>
+                <input type="number" id="criancas" min="0" value="">
+            </div>
+        </div>
+        <button onclick="calcularResul()" class="calcular">Calcular</button>
+        <div id="resultado" style="display: none;">
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
